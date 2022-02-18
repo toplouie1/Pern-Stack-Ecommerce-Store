@@ -49,9 +49,30 @@ const deletedWatch = async (id) => {
 	}
 };
 
+const updateWatch = async (id, watch) => {
+	try {
+		const updateWatch = await db.one(
+			"UPDATE watches SET name=$1 , description=$2 , rating=$3 , image=$4 , featured=$5 , price=$6 WHERE id=$7 RETURNING *",
+			[
+				watch.name,
+				watch.description,
+				watch.rating,
+				watch.image,
+				watch.featured,
+				watch.price,
+				id,
+			]
+		);
+		return updateWatch;
+	} catch (err) {
+		return err;
+	}
+};
+
 module.exports = {
 	getAllWatches,
 	getWatch,
 	createWatch,
 	deletedWatch,
+	updateWatch,
 };

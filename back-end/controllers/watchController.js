@@ -6,6 +6,7 @@ const {
 	getWatch,
 	createWatch,
 	deletedWatch,
+	updateWatch,
 } = require("../queries/watches.js");
 
 // watches === /
@@ -65,6 +66,17 @@ watches.delete("/:id", async (req, res) => {
 		}
 	} catch (err) {
 		console.log(err);
+	}
+});
+
+watches.put("/:id", async (req, res) => {
+	const { id } = req.params;
+	const { body } = req;
+	const updatedWatch = await updateWatch(id, body);
+	if (updatedWatch.id) {
+		res.status(200).json(updatedWatch);
+	} else {
+		res.status(404).json({ error: "Watch not found " });
 	}
 });
 
