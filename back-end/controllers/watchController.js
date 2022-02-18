@@ -20,8 +20,9 @@ watches.get("/", async (req, res) => {
 });
 
 watches.get("/:id", async (req, res) => {
+	const { id } = req.params;
 	try {
-		const oneWatch = await getWatch();
+		const oneWatch = await getWatch(id);
 		if (oneWatch.id) {
 			res.status(200).json(oneWatch);
 		} else {
