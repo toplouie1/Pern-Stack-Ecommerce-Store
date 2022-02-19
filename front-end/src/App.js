@@ -1,30 +1,16 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-const API = process.env.REACT_APP_API_URL;
+// dependencies
+import { Routes, Route } from "react-router-dom";
 
-console.log(API);
+// components
+import NavBar from "../src/Components/NavBar";
+
 function App() {
-  const [days, setDays] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`${API}/test`)
-      .then(
-        (response) => {
-          setDays(response.data);
-        },
-        (error) => console.log("get", error)
-      )
-      .catch((c) => console.warn("catch", c));
-  }, []);
-  return (
-    <div>
-      <ul>
-        {days.map((day) => (
-          <li key={day.name}>{day.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+	return (
+		<div>
+			<NavBar />
+			<main></main>
+		</div>
+	);
 }
 
 export default App;
