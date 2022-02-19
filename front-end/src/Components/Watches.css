@@ -10,9 +10,11 @@
 	width: 14em;
 	align-items: center;
 	transition: transform 0.2s;
+	opacity: 0.9;
 }
 .mainImg:hover {
 	transform: scale(1.2);
+	opacity: 1;
 }
 article {
 	text-align: center;
