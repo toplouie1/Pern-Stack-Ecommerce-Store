@@ -24,16 +24,17 @@ function Watches() {
 			{watches.map((e) => {
 				return (
 					<article key={e.id}>
-						<Link className="watch" to={`/snacks/${e.id}`}>
-							<div>
-								<img className="mainImg" src={e.image} alt={e.name} />
-								<h4>{e.name}</h4>
-								<h4>$ {e.price}</h4>
-							</div>
-							<div>
-								<p>- {e.description}</p>
-							</div>
-						</Link>
+						<div>
+							<img className="mainImg" src={e.image} alt={e.name} />
+							<h4>{e.name}</h4>
+							<h4>$ {e.price}</h4>
+						</div>
+						<div>
+							<p>- {e.description}</p>
+						</div>
+						<button className="watchBtn">
+							<Link to={`/snacks/${e.id}`}>View</Link>
+						</button>
 					</article>
 				);
 			})}

@@ -3,6 +3,10 @@ nav {
 	justify-content: space-between;
 	background-color: rgb(44, 44, 44);
 	align-items: center;
-	padding: 1em 3em;
-	margin-bottom: 1em;
+	padding: 0.5em;
+}
+
+nav h4 a {
+	color: white;
+	font-size: 20px;
 }
