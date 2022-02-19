@@ -1,17 +1,27 @@
 .mainWatches {
 	text-align: center;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 80%;
+	margin: auto;
 }
 .mainImg {
 	height: 14em;
 	width: 14em;
 	align-items: center;
+	transition: transform 0.2s;
+}
+.mainImg:hover {
+	transform: scale(1.2);
 }
 article {
-	margin: 30px;
+	text-align: center;
+	margin: 60px;
 	padding: 30px;
 	border: 1px solid black;
+	border-radius: 10px;
+	width: 70%;
+	box-shadow: 1px 3px 3px rgb(27, 27, 27);
 }
 
 h2 {
@@ -35,5 +45,8 @@ a {
 		text-align: center;
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+	article {
+		width: 60%;
 	}
 }

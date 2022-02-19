@@ -29,11 +29,11 @@ function Watches() {
 							<h4>{e.name}</h4>
 							<h4>$ {e.price}</h4>
 						</div>
-						<div>
+						{/* <div>
 							<p>- {e.description}</p>
-						</div>
+						</div> */}
 						<button className="watchBtn">
-							<Link to={`/snacks/${e.id}`}>View</Link>
+							<Link to={`/watches/${e.id}`}>View</Link>
 						</button>
 					</article>
 				);
