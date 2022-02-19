@@ -1,0 +1,23 @@
+.mainWatches {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.mainImg {
+	height: 14em;
+	width: 14em;
+	align-items: center;
+}
+article {
+	margin: 30px;
+	padding: 30px;
+	border: 1px solid black;
+	display: grid;
+}
+
+h2 {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
