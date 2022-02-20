@@ -63,7 +63,6 @@ function WatchEditForm() {
 			<h1>Edit Watch</h1>
 			<form onSubmit={handleSubmit}>
 				<div>
-					{/* <label htmlFor="name">Name</label> */}
 					<input
 						id="name"
 						type="text"
@@ -73,7 +72,6 @@ function WatchEditForm() {
 					/>
 				</div>
 				<div>
-					{/* <label htmlFor="description">description</label> */}
 					<input
 						id="description"
 						type="text"
@@ -83,7 +81,6 @@ function WatchEditForm() {
 					/>
 				</div>
 				<div>
-					{/* <label htmlFor="image">Image</label> */}
 					<input
 						id="image"
 						type="text"
@@ -91,9 +88,7 @@ function WatchEditForm() {
 						onChange={handleTextChange}
 					/>
 				</div>
-
 				<div>
-					{/* <label htmlFor="rating">Rating</label> */}
 					<input
 						id="rating"
 						type="number"
@@ -101,19 +96,7 @@ function WatchEditForm() {
 						onChange={handleTextChange}
 					/>
 				</div>
-
 				<div>
-					{/* <label htmlFor="featured">Featured</label> */}
-					<input
-						id="featured"
-						type="checkbox"
-						onChange={handleCheckboxChange}
-						checked={watch.featured}
-					/>
-				</div>
-
-				<div>
-					{/* <label htmlFor="price">Price</label> */}
 					<input
 						id="price"
 						type="number"
@@ -121,7 +104,14 @@ function WatchEditForm() {
 						onChange={handleTextChange}
 					/>
 				</div>
-
+				<div>
+					<input
+						id="featured"
+						type="checkbox"
+						onChange={handleCheckboxChange}
+						checked={watch.featured}
+					/>
+				</div>
 				<br />
 				<input type="submit" />
 			</form>
@@ -130,5 +120,3 @@ function WatchEditForm() {
 }
 
 export default WatchEditForm;
-
-// "featured": true,

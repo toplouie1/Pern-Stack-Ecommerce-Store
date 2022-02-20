@@ -7,7 +7,33 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+aside {
+	text-align: center;
+	width: 20%;
+	margin: auto;
+	padding: 50px;
+	padding-top: 2em;
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 13px;
+	box-shadow: 1px 1px 3px rgb(27, 27, 27);
+}
+aside button {
+	margin: 10px;
+	border-radius: 8px;
+	padding: 7px;
+	color: black;
+	cursor: pointer;
+}
+aside button:hover {
+	background-color: aliceblue;
+}
+aside button a {
+	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+	aside {
+		width: 50%;
+	}
 }

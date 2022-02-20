@@ -28,13 +28,10 @@ function Watches() {
 							<img className="mainImg" src={e.image} alt={e.name} />
 							<h4>{e.name}</h4>
 							<h4>$ {e.price}</h4>
+							<button className="watchBtn">
+								<Link to={`/watches/${e.id}`}>View</Link>
+							</button>
 						</div>
-						{/* <div>
-							<p>- {e.description}</p>
-						</div> */}
-						<button className="watchBtn">
-							<Link to={`/watches/${e.id}`}>View</Link>
-						</button>
 					</article>
 				);
 			})}

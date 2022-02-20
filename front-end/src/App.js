@@ -6,11 +6,10 @@ import Home from "./pages/Home";
 import FourOfFour from "./pages/FourOfFour";
 import Index from "./pages/Index";
 
-import WatchDetails from "./Components/WatchDetails";
-import WatchEditForm from "./Components/WatchEditForm";
-
 // components
 import NavBar from "../src/Components/NavBar";
+import WatchDetails from "./Components/WatchDetails";
+import WatchEditForm from "./Components/WatchEditForm";
 
 function App() {
 	return (

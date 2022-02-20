@@ -43,10 +43,7 @@ function WatchDetails() {
 				<Link to={`/watches/${id}/edit`}>Edit</Link>
 			</button>
 			<button>
-				<Link to="/watches">
-					{" "}
-					<a href="/watches">Back</a>
-				</Link>
+				<Link to="/watches">Back</Link>
 			</button>
 		</aside>
 	);
