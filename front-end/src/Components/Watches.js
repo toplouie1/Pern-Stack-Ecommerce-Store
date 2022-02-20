@@ -20,7 +20,7 @@ function Watches() {
 			});
 	}, []);
 	return (
-		<main className="mainWatches">
+		<main className="mainWatches" type="video/mp4">
 			{watches.map((e) => {
 				return (
 					<article key={e.id}>

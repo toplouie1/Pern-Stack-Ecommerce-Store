@@ -9,8 +9,9 @@ body {
 
 aside {
 	text-align: center;
+	margin: 2em;
 	width: 20%;
-	margin: auto;
+	/* margin: auto; */
 	padding: 50px;
 	padding-top: 2em;
 	border: 1px solid black;
@@ -24,6 +25,9 @@ aside button {
 	padding: 7px;
 	color: black;
 	cursor: pointer;
+}
+aside h2 {
+	font-size: 15px;
 }
 aside button:hover {
 	background-color: aliceblue;

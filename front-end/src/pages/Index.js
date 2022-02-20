@@ -1,8 +1,11 @@
 import Watches from "../Components/Watches";
+import VideoMain from "../Components/VideoMain";
+
 function Index() {
 	return (
 		<div>
-			<h2>All Watches</h2>
+			<VideoMain />
+			<h1>All Watches</h1>
 			<Watches />
 		</div>
 	);
