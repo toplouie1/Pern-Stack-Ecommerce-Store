@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import NavBar from "../src/Components/NavBar";
 import WatchDetails from "./Components/WatchDetails";
 import WatchEditForm from "./Components/WatchEditForm";
+import WatchNew from "./Components/WatchNew";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 					<Route path="/watches" element={<Index />} />
 					<Route path="/watches/:id" element={<WatchDetails />} />
 					<Route path="/watches/:id/edit" element={<WatchEditForm />} />
+					<Route path="/watches/new" element={<WatchNew />} />
 					<Route path="*" element={<FourOfFour />} />
 				</Routes>
 			</main>
