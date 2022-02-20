@@ -5,7 +5,7 @@ function Index() {
 	return (
 		<div>
 			<VideoMain />
-			<h1>All Watches</h1>
+			<h1>Watches</h1>
 			<Watches />
 		</div>
 	);

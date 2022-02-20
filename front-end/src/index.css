@@ -7,18 +7,26 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-aside {
-	text-align: center;
+.detailsMain {
 	margin: 2em;
-	width: 20%;
-	/* margin: auto; */
-	padding: 50px;
-	padding-top: 2em;
-	border: 1px solid black;
-	border-radius: 20px;
-	font-size: 13px;
+}
+
+aside {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	align-items: center;
+	width: 60%;
+	margin: auto;
+	padding: 30px;
+	border-radius: 10px;
+	font-size: 20px;
 	box-shadow: 1px 1px 3px rgb(27, 27, 27);
 }
+.detailsTitle {
+	font-size: 2em;
+}
+
 aside button {
 	margin: 10px;
 	border-radius: 8px;
@@ -35,6 +43,9 @@ aside button:hover {
 aside button a {
 	color: black;
 }
+aside div {
+	margin: 1em;
+}
 .homePage {
 	background-color: rgb(255, 140, 0);
 }
@@ -45,6 +56,18 @@ h1 {
 
 @media only screen and (max-width: 600px) {
 	aside {
-		width: 50%;
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		align-items: center;
+		width: 80%;
+		margin: auto;
+		padding: 30px;
+		border-radius: 10px;
+		font-size: 20px;
+		box-shadow: 1px 1px 3px rgb(27, 27, 27);
+	}
+	h1 {
+		font-size: 2em;
 	}
 }
