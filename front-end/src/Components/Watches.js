@@ -27,7 +27,7 @@ function Watches() {
 						<div>
 							<img className="mainImg" src={e.image} alt={e.name} />
 							<h4>{e.name}</h4>
-							<h4>$ {e.price}</h4>
+							<h4>Price: ${e.price}</h4>
 							<button className="watchBtn">
 								<Link to={`/watches/${e.id}`}>View</Link>
 							</button>
