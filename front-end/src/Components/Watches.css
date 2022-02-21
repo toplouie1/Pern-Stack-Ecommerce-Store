@@ -4,7 +4,15 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	width: 80%;
 	margin: auto;
+	padding: 60px;
 	background-color: rgb(43, 43, 43);
+	border-radius: 10px;
+}
+.mainWatches h4 {
+	font-family: "Courier New", Courier, monospace;
+	border-bottom: 1px solid rgb(182, 182, 182);
+	margin: 10px;
+	padding: 10px;
 }
 .mainImg {
 	height: 14em;
@@ -48,6 +56,7 @@ a {
 		text-align: center;
 		display: grid;
 		grid-template-columns: 1fr;
+		background-color: white;
 	}
 	article {
 		width: 80%;

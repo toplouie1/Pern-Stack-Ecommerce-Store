@@ -10,6 +10,34 @@ body {
 .detailsMain {
 	margin: 2em;
 }
+.detailsTitle {
+	font-size: 2em;
+}
+.detailsPrice {
+	font-size: 1em;
+}
+.detailsP {
+	font-family: monospace;
+	font-size: 1.2em;
+}
+
+/* video page  */
+.headerAll {
+	position: absolute;
+	top: 8em;
+	left: 30em;
+	z-index: 2;
+}
+.headerAll h2 {
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	font-size: 3.3em;
+}
+.headerAll h3 {
+	font-weight: 100;
+	font-size: 3.3em;
+	color: rgb(255, 255, 255);
+}
 
 aside {
 	display: grid;
@@ -22,9 +50,6 @@ aside {
 	border-radius: 10px;
 	font-size: 20px;
 	box-shadow: 1px 1px 3px rgb(27, 27, 27);
-}
-.detailsTitle {
-	font-size: 2em;
 }
 
 aside button {
@@ -52,20 +77,32 @@ aside div {
 h1 {
 	text-align: center;
 	font-size: 4em;
+	background: -webkit-linear-gradient(#000000, #6b6b6b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {
 	aside {
-		display: grid;
 		grid-template-columns: 1fr;
-		text-align: center;
-		align-items: center;
 		width: 80%;
 		margin: auto;
-		padding: 30px;
-		border-radius: 10px;
-		font-size: 20px;
+		padding: 10px;
+		font-size: 10px;
 		box-shadow: 1px 1px 3px rgb(27, 27, 27);
+	}
+	.detailsTitle {
+		font-size: 1.3em;
+	}
+	.detailsPrice {
+		font-size: 1em;
+	}
+	.detailsP {
+		font-family: monospace;
+		font-size: 0.8em;
+	}
+	.headerAll {
+		display: none;
 	}
 	h1 {
 		font-size: 2em;

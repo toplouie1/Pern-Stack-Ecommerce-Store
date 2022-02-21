@@ -105,6 +105,9 @@ function WatchEditForm() {
 					/>
 				</div>
 				<div>
+					<div>
+						<label htmlFor="featured">Featured</label>
+					</div>
 					<input
 						id="featured"
 						type="checkbox"

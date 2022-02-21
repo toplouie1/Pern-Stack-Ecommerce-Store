@@ -38,10 +38,10 @@ function WatchDetails() {
 				</div>
 				<div>
 					<h2 className="detailsTitle">Name: {watch.name}</h2>
-					<h2>- {watch.description}</h2>
-					<h2>Rating: {watch.rating}</h2>
-					<h2>: {watch.featured}</h2>
-					<h2>Price: ${watch.price}</h2>
+					<h2 className="detailsP">- {watch.description}</h2>
+					<h2 className="detailsP">Rating: {watch.rating}</h2>
+					{/* <h2>: {watch.featured}</h2> */}
+					<h2 className="detailsPrice">Price: ${watch.price}</h2>
 				</div>{" "}
 				<div>
 					<button onClick={handleDelete}>Delete</button>

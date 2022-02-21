@@ -17,11 +17,15 @@ function VideoMain() {
 					height: "100%",
 					objectFit: "cover",
 					transform: "translate(-50%, -0%)",
-					zIndex: "-1",
+					zIndex: "1",
 				}}
 			>
 				<source src={WatchBack} />
 			</video>
+			<div className="headerAll">
+				<h2>Top Watch</h2>
+				<h3>BEST OF THE BEST ...</h3>
+			</div>
 		</div>
 	);
 }
