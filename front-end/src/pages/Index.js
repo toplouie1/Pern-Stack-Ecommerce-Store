@@ -1,5 +1,6 @@
 import Watches from "../Components/Watches";
 import VideoMain from "../Components/VideoMain";
+import Footer from "../Components/footer";
 
 function Index() {
 	return (
@@ -7,6 +8,7 @@ function Index() {
 			<VideoMain />
 			<h1>Watches</h1>
 			<Watches />
+			<Footer />
 		</div>
 	);
 }

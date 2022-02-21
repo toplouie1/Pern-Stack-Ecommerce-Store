@@ -21,6 +21,17 @@ body {
 	font-size: 1.2em;
 }
 
+/* footer  */
+
+.footer {
+	padding: 30px;
+	margin-top: 2em;
+	background-color: #000000;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+}
+
 /* video page  */
 .headerAll {
 	position: absolute;
