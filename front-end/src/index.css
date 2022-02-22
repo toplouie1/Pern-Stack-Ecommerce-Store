@@ -40,15 +40,18 @@ body {
 	top: 8em;
 	left: 30em;
 	z-index: 2;
-	background-color: aliceblue;
+	background-color: #363636;
 	padding: 40px;
+	opacity: 0.8;
 }
 .headerAll h2 {
+	color: aliceblue;
 	margin: 0;
 	font-weight: 400;
 	font-size: 3.3em;
 }
 .headerAll h3 {
+	color: aliceblue;
 	margin: 0;
 	font-weight: 100;
 	font-size: 3.3em;
@@ -68,7 +71,7 @@ aside {
 	background-color: white;
 }
 
-aside button {
+aside Button {
 	margin: 10px;
 	border-radius: 8px;
 	padding: 7px;
@@ -77,12 +80,6 @@ aside button {
 }
 aside h2 {
 	font-size: 15px;
-}
-aside button:hover {
-	background-color: aliceblue;
-}
-aside button a {
-	color: black;
 }
 aside div {
 	margin: 1em;

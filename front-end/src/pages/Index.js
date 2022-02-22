@@ -1,12 +1,12 @@
 import Watches from "../Components/Watches";
-import VideoMain from "../Components/VideoMain";
+// import VideoMain from "../Components/VideoMain";
 import Footer from "../Components/footer";
 
 function Index() {
 	return (
 		<div>
-			<VideoMain />
-			<h1>Watches</h1>
+			{/* <VideoMain /> */}
+			<h1>Shop All</h1>
 			<Watches />
 			<Footer />
 		</div>

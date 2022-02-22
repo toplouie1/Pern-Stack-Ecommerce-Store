@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import Button from "@mui/material/Button";
 
 function NavBar() {
 	return (
@@ -10,9 +11,9 @@ function NavBar() {
 			<h4>
 				<Link to="/watches">Watch</Link>
 			</h4>
-			<button>
+			<Button size="small" variant="outlined">
 				<Link to="/watches/new">Add Watch</Link>
-			</button>
+			</Button>
 		</nav>
 	);
 }

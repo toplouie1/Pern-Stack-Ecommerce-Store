@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Watches.css";
+import Button from "@mui/material/Button";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -28,9 +29,12 @@ function Watches() {
 							<img className="mainImg" src={e.image} alt={e.name} />
 							<h4>{e.name}</h4>
 							<h4>Price: ${e.price}</h4>
-							<button className="watchBtn">
+							{/* <button className="watchBtn">
 								<Link to={`/watches/${e.id}`}>View</Link>
-							</button>
+							</button> */}
+							<Button className="watchBtn" size="small" variant="outlined">
+								<Link to={`/watches/${e.id}`}>View</Link>
+							</Button>
 						</div>
 					</article>
 				);

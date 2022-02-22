@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -45,13 +46,39 @@ function WatchDetails() {
 					<h2 className="detailsPrice">Price: ${watch.price}</h2>
 				</div>{" "}
 				<div>
-					<button onClick={handleDelete}>Delete</button>
-					<button>
+					<Button
+						onClick={handleDelete}
+						className="watchBtn"
+						size="small"
+						variant="outlined"
+						style={{
+							color: "black",
+							margin: "10px",
+						}}
+					>
+						Delete
+					</Button>
+					<Button
+						className="watchBtn"
+						size="small"
+						variant="outlined"
+						style={{
+							color: "white",
+							margin: "10px",
+						}}
+					>
 						<Link to={`/watches/${id}/edit`}>Edit</Link>
-					</button>
-					<button>
+					</Button>
+					<Button
+						className="watchBtn"
+						size="small"
+						variant="outlined"
+						style={{
+							margin: "10px",
+						}}
+					>
 						<Link to="/watches">Back</Link>
-					</button>
+					</Button>
 				</div>
 			</aside>
 		</main>

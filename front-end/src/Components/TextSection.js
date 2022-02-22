@@ -1,9 +1,22 @@
 import styled from "styled-components";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function TextSection() {
 	return (
 		<Wrapper>
 			<Title>Top Watch</Title>
+			<Button
+				size="small"
+				variant="outlined"
+				style={{
+					margin: "10px",
+				}}
+			>
+				<Link style={{ color: "white" }} to="/watches">
+					View All
+				</Link>
+			</Button>
 		</Wrapper>
 	);
 }
