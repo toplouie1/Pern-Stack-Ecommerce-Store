@@ -1,15 +1,18 @@
 nav {
 	display: flex;
 	justify-content: space-between;
-	background-color: rgb(19, 18, 18);
 	align-items: center;
 	padding: 0.1em 1.5em;
+	position: sticky;
+	background-color: rgb(19, 18, 18);
+	z-index: 3;
+	top: 0;
 }
 
 nav h4 a {
 	font-size: 23px;
 	font-weight: 300;
-	background: -webkit-linear-gradient(#797979, #ffffff);
+	background: -webkit-linear-gradient(#c4ff9f, #001cff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -26,6 +29,9 @@ nav button:hover {
 nav button a {
 	transition: 0.2s ease-in;
 	color: white;
+	background: -webkit-linear-gradient(#c4ff9f, #001cff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 nav button a:hover {
 	color: rgb(255, 255, 255);

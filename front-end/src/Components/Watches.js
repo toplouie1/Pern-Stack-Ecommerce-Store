@@ -27,8 +27,11 @@ function Watches() {
 					<article key={e.id}>
 						<div>
 							<img className="mainImg" src={e.image} alt={e.name} />
-							<h4>{e.name}</h4>
-							<h4>Price: ${e.price}</h4>
+							<div className="priceName">
+								<h4>{e.name}</h4>
+								<h4>${e.price}</h4>
+							</div>
+
 							<Button className="watchBtn" size="small" variant="outlined">
 								<Link to={`/watches/${e.id}`}>View</Link>
 							</Button>

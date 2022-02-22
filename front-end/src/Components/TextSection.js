@@ -1,14 +1,12 @@
 import styled from "styled-components";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import WatchOutlinedIcon from "@mui/icons-material/WatchOutlined";
 
 export default function TextSection() {
 	return (
 		<Wrapper>
 			<div>
-				<Title>Top Watch</Title>
-				<WatchOutlinedIcon fontSize="large" color="primary" />
+				<Title className="theTitle">Top Watch</Title>
 			</div>
 			<Button
 				size="small"

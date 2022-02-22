@@ -6,7 +6,7 @@ function Index() {
 	return (
 		<div className="indexMain">
 			{/* <VideoMain /> */}
-			<h1>Shop All</h1>
+			<h1>Shop</h1>
 			<Watches />
 			<Footer />
 		</div>

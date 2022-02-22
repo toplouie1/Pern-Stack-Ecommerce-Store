@@ -51,6 +51,19 @@ a {
 	color: black;
 }
 
+.priceName {
+	display: flex;
+	justify-content: center;
+	font-size: large;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width: 1200px) {
+	.mainWatches {
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
 @media only screen and (max-width: 600px) {
 	.mainWatches {
 		text-align: center;
