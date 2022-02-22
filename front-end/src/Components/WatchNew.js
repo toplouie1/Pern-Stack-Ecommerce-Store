@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Button } from "@mui/material";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -97,7 +98,9 @@ function WatchNew() {
 					/>
 				</div>
 				<br />
-				<input type="submit" />
+				<Button type="submit" variant="outlined">
+					Submit
+				</Button>
 			</form>
 		</div>
 	);

@@ -19,19 +19,21 @@ body {
 .viewTitle {
 	padding: 30px;
 }
-.theMainDetails {
-	margin: 0;
+/* details page  */
+
+.detailsMain {
+	margin: 0px;
 }
 
 /* footer  */
 
 .footer {
 	padding: 30px;
-	margin-top: 2em;
 	background-color: #000000;
 	color: white;
 	display: flex;
 	justify-content: space-evenly;
+	margin-top: 2em;
 }
 
 /* video page  */

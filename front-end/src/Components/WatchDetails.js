@@ -32,7 +32,7 @@ function WatchDetails() {
 			});
 	};
 	return (
-		<main className="detailsMain ">
+		<div>
 			<h1 className="viewTitle">{watch.name}</h1>
 			<aside>
 				<div>
@@ -81,7 +81,7 @@ function WatchDetails() {
 					</Button>
 				</div>
 			</aside>
-		</main>
+		</div>
 	);
 }
 

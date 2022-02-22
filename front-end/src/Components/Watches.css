@@ -54,12 +54,14 @@ a {
 @media only screen and (max-width: 600px) {
 	.mainWatches {
 		text-align: center;
-		display: grid;
+		/* display: grid; */
+		align-items: center;
 		grid-template-columns: 1fr;
 		background-color: white;
 	}
 	article {
 		width: 80%;
-		margin: 10;
+		margin: 0px;
+		margin-bottom: 3em;
 	}
 }

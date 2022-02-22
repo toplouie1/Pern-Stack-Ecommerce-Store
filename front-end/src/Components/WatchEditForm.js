@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./EditForm.css";
+import { Button } from "@mui/material";
 
 // import TextField from "@material-ui/core/TextField";
 
@@ -118,7 +119,9 @@ function WatchEditForm() {
 					/>
 				</div>
 				<br />
-				<input type="submit" />
+				<Button type="submit" variant="outlined">
+					Submit
+				</Button>
 			</form>
 		</div>
 	);

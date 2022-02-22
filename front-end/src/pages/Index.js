@@ -4,7 +4,7 @@ import Footer from "../Components/footer";
 
 function Index() {
 	return (
-		<div>
+		<div className="indexMain">
 			{/* <VideoMain /> */}
 			<h1>Shop All</h1>
 			<Watches />
