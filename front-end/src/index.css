@@ -40,16 +40,18 @@ body {
 	top: 8em;
 	left: 30em;
 	z-index: 2;
+	background-color: aliceblue;
+	padding: 40px;
 }
 .headerAll h2 {
-	color: rgb(255, 255, 255);
+	margin: 0;
 	font-weight: 400;
 	font-size: 3.3em;
 }
 .headerAll h3 {
+	margin: 0;
 	font-weight: 100;
 	font-size: 3.3em;
-	color: rgb(255, 255, 255);
 }
 
 aside {

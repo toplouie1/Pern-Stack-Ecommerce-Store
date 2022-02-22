@@ -5,12 +5,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import FourOfFour from "./pages/FourOfFour";
 import Index from "./pages/Index";
-
 import Details from "./pages/Details";
 
 // components
 import NavBar from "../src/Components/NavBar";
-// import WatchDetails from "./Components/WatchDetails";
 import WatchEditForm from "./Components/WatchEditForm";
 import WatchNew from "./Components/WatchNew";
 

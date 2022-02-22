@@ -24,7 +24,7 @@ function VideoMain() {
 			</video>
 			<div className="headerAll">
 				<h2>Top Watch</h2>
-				<h3>BEST OF THE BEST ...</h3>
+				<h3>BEST OF THE BEST</h3>
 			</div>
 		</div>
 	);
