@@ -18,9 +18,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h2`
 	color: rgba(255, 255, 255, 1);
-	font-style: normal;
 	font-family: "Courier New", Courier, monospace;
-
-	font-weight: bold;
 	font-size: 80px;
+	font-weight: 400;
 `;

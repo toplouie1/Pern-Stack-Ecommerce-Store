@@ -32,6 +32,7 @@ function WatchDetails() {
 	};
 	return (
 		<main className="detailsMain ">
+			<h1 className="viewTitle">{watch.name}</h1>
 			<aside>
 				<div>
 					<img className="mainImg" src={watch.image} alt={watch.name} />

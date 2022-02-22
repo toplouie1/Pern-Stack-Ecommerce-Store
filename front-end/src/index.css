@@ -6,10 +6,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-.detailsMain {
-	margin: 2em;
-}
 .detailsTitle {
 	font-size: 2em;
 }
@@ -19,6 +15,12 @@ body {
 .detailsP {
 	font-family: monospace;
 	font-size: 1.2em;
+}
+.viewTitle {
+	padding: 30px;
+}
+.theMainDetails {
+	margin: 0;
 }
 
 /* footer  */
@@ -61,6 +63,7 @@ aside {
 	border-radius: 10px;
 	font-size: 20px;
 	box-shadow: 1px 1px 3px rgb(27, 27, 27);
+	background-color: white;
 }
 
 aside button {
