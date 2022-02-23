@@ -117,13 +117,3 @@ h1 {
 		font-size: 2em;
 	}
 }
-/* @media only screen and (max-width: 1200px) {
-	.mainWatches {
-		text-align: center;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		/* width: 80%;
-		margin: auto;
-		padding: 60px;
-		background-color: rgb(43, 43, 43);
-		border-radius: 10px; */
