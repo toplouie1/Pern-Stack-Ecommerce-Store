@@ -37,7 +37,10 @@ function App() {
 					<Route path="/watches/:id" element={<Details />} />
 					<Route path="/watches/:id/edit" element={<WatchEditForm />} />
 					<Route path="/watches/new" element={<WatchNew />} />
-					<Route path="/cart" element={<Cart cartItems={cartItems} />} />
+					<Route
+						path="/cart"
+						element={<Cart cartItems={cartItems} setCartItems={setCartItems} />}
+					/>
 					<Route path="*" element={<FourOfFour />} />
 				</Routes>
 			</main>

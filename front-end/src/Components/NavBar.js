@@ -9,10 +9,9 @@ function NavBar() {
 			<h4>
 				<Link to="/">Home</Link>
 			</h4>
-			<Link to="/watches">
+			<Link className="middleNav" to="/watches">
 				<WatchOutlinedIcon fontSize="large" color="primary" />
 			</Link>
-
 			<div>
 				<Button size="small" variant="outlined">
 					<Link to="/watches/new">Add Watch</Link>

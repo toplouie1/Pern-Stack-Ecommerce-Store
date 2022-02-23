@@ -14,7 +14,6 @@ function Watches({ handleAddProduct }) {
 			.get(API + "/watches")
 			.then((res) => {
 				setWatches(res.data);
-				console.log(res.data);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -50,11 +49,7 @@ function Watches({ handleAddProduct }) {
 		);
 	});
 
-	return (
-		<main className="mainWatches" type="video/mp4">
-			{allwatches}
-		</main>
-	);
+	return <main className="mainWatches">{allwatches}</main>;
 }
 
 export default Watches;

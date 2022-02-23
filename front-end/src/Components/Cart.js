@@ -1,49 +1,69 @@
 import React from "react";
 import "./Cart.css";
 import Button from "@mui/material/Button";
+import DeleteIcon from "@mui/icons-material/Delete";
 
-function Cart({ cartItems }) {
+function Cart({ cartItems, setCartItems }) {
 	const buyAll = () => {
-		alert("THIS IS NOT A REAL PRODUCT ");
+		alert("CARD DECLINED !!!!!!!");
 	};
+	const removingAll = () => {
+		setCartItems([]);
+	};
+	let total = cartItems.map((item) => item.price).reduce((a, b) => a + b, 0);
+
 	return (
 		<div className="cartItems">
-			<div className="cartHeader">Cart Items</div>
-			<Button
-				className="cartHeader"
-				size="small"
-				variant="outlined"
-				color="error"
-			>
-				Remove All
-			</Button>
+			{cartItems.length !== 0 && <div className="cartHeader">Cart Items</div>}
 			{cartItems.length === 0 && (
-				<div className="emptyItems"> No items are added.</div>
+				<div className="emptyItems">Cart is Empty</div>
 			)}
 			<div className="cartInfo">
 				{cartItems.map((item) => (
-					<div className="allCartItem">
-						<div key={item.id} className="cartItems">
+					<div key={item.id} className="allCartItem">
+						<div className="cartItems">
 							<img className="cartImg" src={item.image} alt={item.name} />
 						</div>
 						<div>
 							<div>Name: {item.name}</div>
 							<div>Price: ${item.price}</div>
-							<Button size="small" variant="outlined" color="error">
-								Remove
-							</Button>
 						</div>
 					</div>
 				))}
 			</div>
-			<Button
-				onClick={buyAll}
-				className="cartButton"
-				size="small"
-				variant="contained"
-			>
-				Buy
-			</Button>
+			<div className="cartBottom">
+				<div>
+					{cartItems.length !== 0 && (
+						<Button
+							onClick={removingAll}
+							className="cartHeader"
+							size="small"
+							variant="outlined"
+							color="error"
+							startIcon={<DeleteIcon />}
+						>
+							Remove All
+						</Button>
+					)}
+				</div>
+				<div>
+					{cartItems.length !== 0 && (
+						<Button
+							onClick={buyAll}
+							className="cartButton"
+							size="large"
+							variant="outlined"
+						>
+							Buy
+						</Button>
+					)}
+				</div>
+				<div>
+					{cartItems.length !== 0 && (
+						<div>Total: ${total.toLocaleString()}</div>
+					)}
+				</div>
+			</div>
 		</div>
 	);
 }

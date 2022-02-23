@@ -45,4 +45,13 @@
 .cartInfo {
 	width: 90%;
 	margin: auto;
+	margin-bottom: 2em;
+}
+.cartBottom {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+	margin: auto;
+	font-size: 2em;
+	margin-bottom: 2em;
 }

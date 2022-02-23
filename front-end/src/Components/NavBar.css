@@ -9,6 +9,9 @@ nav {
 	top: 0;
 }
 
+.middleNav {
+	margin-left: 100px;
+}
 nav h4 a {
 	font-size: 23px;
 	font-weight: 300;
