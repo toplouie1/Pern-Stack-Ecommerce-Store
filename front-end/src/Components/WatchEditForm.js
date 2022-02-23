@@ -57,8 +57,7 @@ function WatchEditForm() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		updateWatch(watch, id);
-		navigate("/watches");
+		updateWatch(watch);
 	};
 
 	return (

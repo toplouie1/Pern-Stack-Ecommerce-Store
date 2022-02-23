@@ -2,12 +2,12 @@ import Watches from "../Components/Watches";
 // import VideoMain from "../Components/VideoMain";
 import Footer from "../Components/footer";
 
-function Index() {
+function Index({ handleAddProduct }) {
 	return (
 		<div className="indexMain">
 			{/* <VideoMain /> */}
 			<h1>Shop</h1>
-			<Watches />
+			<Watches handleAddProduct={handleAddProduct} />
 			<Footer />
 		</div>
 	);

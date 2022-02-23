@@ -17,16 +17,17 @@ nav h4 a {
 	-webkit-text-fill-color: transparent;
 }
 
-nav button {
+nav div button {
 	padding: 7px;
 	border-radius: 10px;
 	transition: 0.2s ease-in;
+	margin: 5px;
 }
 nav button:hover {
 	background-color: rgb(44, 44, 44);
 	color: white;
 }
-nav button a {
+nav div button a {
 	transition: 0.2s ease-in;
 	color: white;
 	background: -webkit-linear-gradient(#c4ff9f, #001cff);
