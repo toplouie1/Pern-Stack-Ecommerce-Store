@@ -20,7 +20,7 @@ function App() {
 		if (!ProductExist) {
 			setCartItems([...cartItems, watch]);
 		} else {
-			alert("The watch is alerady in the cart");
+			alert("WATCH IS ALERADY IN THE CART !!!");
 		}
 	};
 

@@ -12,25 +12,25 @@ function Cart({ cartItems, setCartItems }) {
 	};
 	let total = cartItems.map((item) => item.price).reduce((a, b) => a + b, 0);
 
+	let allCart = cartItems.map((item) => (
+		<div key={item.id} className="allCartItem">
+			<div className="cartItems">
+				<img className="cartImg" src={item.image} alt={item.name} />
+			</div>
+			<div>
+				<div>Name: {item.name}</div>
+				<div>Price: ${item.price}</div>
+			</div>
+		</div>
+	));
+
 	return (
 		<div className="cartItems">
 			{cartItems.length !== 0 && <div className="cartHeader">Cart Items</div>}
 			{cartItems.length === 0 && (
 				<div className="emptyItems">Cart is Empty</div>
 			)}
-			<div className="cartInfo">
-				{cartItems.map((item) => (
-					<div key={item.id} className="allCartItem">
-						<div className="cartItems">
-							<img className="cartImg" src={item.image} alt={item.name} />
-						</div>
-						<div>
-							<div>Name: {item.name}</div>
-							<div>Price: ${item.price}</div>
-						</div>
-					</div>
-				))}
-			</div>
+			<div className="cartInfo">{allCart}</div>
 			<div className="cartBottom">
 				<div>
 					{cartItems.length !== 0 && (

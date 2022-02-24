@@ -33,6 +33,7 @@ function Watches({ handleAddProduct }) {
 					<Button className="watchBtn" size="small" variant="outlined">
 						<Link to={`/watches/${e.id}`}>View</Link>
 					</Button>
+
 					<Button
 						onClick={() =>
 							handleAddProduct(watches.find((watch) => watch.id === e.id))
