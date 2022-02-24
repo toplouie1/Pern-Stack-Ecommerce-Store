@@ -20,23 +20,21 @@ function Watches({ handleAddProduct }) {
 			});
 	}, []);
 
-	const allwatches = watches.map((e) => {
+	const allwatches = watches.map((each) => {
 		return (
-			<article key={e.id}>
+			<article key={each.id}>
 				<div>
-					<img className="mainImg" src={e.image} alt={e.name} />
+					<img className="mainImg" src={each.image} alt={each.name} />
 					<div className="priceName">
-						<h4>{e.name}</h4>
-						<h4>${e.price}</h4>
+						<h4>{each.name}</h4>
+						<h4>${each.price}</h4>
 					</div>
-
 					<Button className="watchBtn" size="small" variant="outlined">
-						<Link to={`/watches/${e.id}`}>View</Link>
+						<Link to={`/watches/${each.id}`}>View</Link>
 					</Button>
-
 					<Button
 						onClick={() =>
-							handleAddProduct(watches.find((watch) => watch.id === e.id))
+							handleAddProduct(watches.find((watch) => watch.id === each.id))
 						}
 						className="watchBtn"
 						size="small"

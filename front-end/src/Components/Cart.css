@@ -55,3 +55,25 @@
 	font-size: 1.5em;
 	margin-bottom: 2em;
 }
+.totalCart {
+	font-size: 1em;
+}
+.cartDiscription {
+	font-size: 0.3em;
+	padding: 1em;
+}
+@media only screen and (max-width: 600px) {
+	.cartHeader {
+		font-size: 2em;
+		margin: 1em;
+	}
+	.cartBottom {
+		justify-content: center;
+	}
+	.totalCart {
+		font-size: 0.8em;
+	}
+	.cartDiscription {
+		font-size: 0.3em;
+	}
+}

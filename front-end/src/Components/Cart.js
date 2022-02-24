@@ -22,7 +22,7 @@ function Cart({ cartItems, setCartItems }) {
 			<div className="cartItems">
 				<img className="cartImg" src={item.image} alt={item.name} />
 			</div>
-			<div>
+			<div className="cartDiscription">
 				<div>Name: {item.name}</div>
 				<div>Price: ${item.price}</div>
 			</div>
@@ -38,7 +38,7 @@ function Cart({ cartItems, setCartItems }) {
 
 	return (
 		<div className="cartItems">
-			{cartItems.length !== 0 && <div className="cartHeader">Cart Items</div>}
+			{cartItems.length !== 0 && <div className="cartHeader">Cart</div>}
 			{cartItems.length === 0 && (
 				<div className="emptyItems">Cart is Empty</div>
 			)}
@@ -58,7 +58,7 @@ function Cart({ cartItems, setCartItems }) {
 				</div>
 				<div>
 					{cartItems.length !== 0 && (
-						<div>Total: ${total.toLocaleString()}</div>
+						<div className="totalCart">Total: ${total.toLocaleString()}</div>
 					)}
 				</div>
 				<div>
