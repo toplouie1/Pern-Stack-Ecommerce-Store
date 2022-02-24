@@ -12,6 +12,11 @@ function Cart({ cartItems, setCartItems }) {
 	};
 	let total = cartItems.map((item) => item.price).reduce((a, b) => a + b, 0);
 
+	let removeEach = (itemId) => {
+		let afterRemove = cartItems.filter((e) => e.id !== itemId);
+		setCartItems(afterRemove);
+	};
+
 	let allCart = cartItems.map((item) => (
 		<div key={item.id} className="allCartItem">
 			<div className="cartItems">
@@ -20,6 +25,13 @@ function Cart({ cartItems, setCartItems }) {
 			<div>
 				<div>Name: {item.name}</div>
 				<div>Price: ${item.price}</div>
+			</div>
+			<div>
+				<Button
+					onClick={() => removeEach(item.id)}
+					color="error"
+					startIcon={<DeleteIcon />}
+				></Button>
 			</div>
 		</div>
 	));
@@ -35,23 +47,9 @@ function Cart({ cartItems, setCartItems }) {
 				<div>
 					{cartItems.length !== 0 && (
 						<Button
-							onClick={removingAll}
-							className="cartHeader"
-							size="small"
-							variant="outlined"
-							color="error"
-							startIcon={<DeleteIcon />}
-						>
-							Remove All
-						</Button>
-					)}
-				</div>
-				<div>
-					{cartItems.length !== 0 && (
-						<Button
 							onClick={buyAll}
 							className="cartButton"
-							size="large"
+							size="small"
 							variant="outlined"
 						>
 							Buy
@@ -61,6 +59,20 @@ function Cart({ cartItems, setCartItems }) {
 				<div>
 					{cartItems.length !== 0 && (
 						<div>Total: ${total.toLocaleString()}</div>
+					)}
+				</div>
+				<div>
+					{cartItems.length !== 0 && (
+						<Button
+							onClick={removingAll}
+							className="cartHeader"
+							size="small"
+							variant="outlined"
+							color="error"
+							startIcon={<DeleteIcon />}
+						>
+							All
+						</Button>
 					)}
 				</div>
 			</div>
