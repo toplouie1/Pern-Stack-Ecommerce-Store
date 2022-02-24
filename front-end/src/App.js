@@ -26,7 +26,7 @@ function App() {
 
 	return (
 		<div>
-			<NavBar />
+			<NavBar cartItems={cartItems} />
 			<main>
 				<Routes>
 					<Route exact path="/" element={<Home />} />

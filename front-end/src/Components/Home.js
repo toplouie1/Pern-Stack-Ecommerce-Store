@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import TextSection from "./TextSection";
 
+import Footer from "./footer";
 import { OrbitControls } from "@react-three/drei";
 
 import Box from "./Box";
@@ -20,6 +21,7 @@ export default function Home() {
 					<Box />
 				</Suspense>
 			</Canvas>
+			<Footer />
 		</Wrapper>
 	);
 }
