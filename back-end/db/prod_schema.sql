@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS cta_dev;
-
+DROP TABLE IF EXISTS test;
 
 CREATE TABLE  watches  (
    id SERIAL PRIMARY KEY, 
